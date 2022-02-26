@@ -59,6 +59,9 @@ highest_white_male_pop <- race %>%
   filter(white_male_prison_pop == max(white_male_prison_pop)) %>%
   pull(white_male_prison_pop) 
 
+ratio_female <- highest_black_female_pop / highest_white_female_pop
+ratio_male <- highest_black_male_pop / highest_white_male_pop
+
 # map - gender ratio, male/female
 gender_state <- incarceration_trends %>%
   select(female_jail_pop, male_jail_pop, year, total_pop, state) %>%
