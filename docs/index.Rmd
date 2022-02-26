@@ -1,0 +1,41 @@
+---
+title: "Incarceration"
+author: "Linda Giang"
+date: "2/25/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Incarceration in the US
+<hr/>
+The Black Lives Matter movement that had gained more public attention in the recent years is strongly tied to police brutality and incarceration of black people. The porportion of black people who are detained are of higher frequency compared to the population as a whole. Therefore the 2 race that I will be focusing on are the white population and the black population. I have also decided to have gender as my main focal point since gender is one of the factors that people make the first impressions on. 
+
+### Summary 
+<hr/>
+
+
+#### Gender Population Over Time
+<hr/>
+```{r echo = FALSE}
+source("../source/analysis.R")
+gender_vs_time
+```
+<br/>
+Overall it can be seen that the male population makes up a higher percentage compared to female. However, it can be seen that both the lines have an overall similar shape. The populations in general have also been increasing over the years regardless of gender. This could be due to the increased in US population in general or other factors that are not as obvious. 
+
+#### Gender and Race
+<hr/>
+```{r echo = FALSE}
+female_vs_male
+```
+
+The data for female compared to male of black and white people, although shows similar shapes, vary greatly in numbers. The graph for black people have a larger range, reaching around 1/3 more for female and 2 times more for male. 
+
+#### Gender Ratio Mapped
+```{r echo = FALSE}
+us_map
+```
+
+This map is intended to show the ratio differences between the male and female population across the states. 
